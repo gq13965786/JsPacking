@@ -1,0 +1,36 @@
+{
+  "name": "Ape",
+  "version": "1.0.0",
+  "description": "game engine and editor, written in javascripts,Ape",
+  "main": "index.js",
+  "directories": {
+    "example": "example",
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "cd build && node build.js",
+    "test:units-single": "karma start tests/karma.conf.js --single-run",
+    "test:units": "karma start tests/karma.conf.js",
+    "test:realse": "karma start tests/karma.conf.js --release"
+  },
+  "keywords": [],
+  "author": "David(Qi) Guo",
+  "license": "MIT",
+  "dependencies": {},
+  "eslintIgnore": [
+    "src/polyfill/*"
+  ],  
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "fs-extra": "^7.0.1",
+    "google-closure-compiler": "^20190121.0.0",
+    "karma": "^4.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^2.0.1",
+    "karma-mocha": "^1.3.0",
+    "karma-spec-reporter": "0.0.32",
+    "mocha": "^5.2.0",
+    "preprocessor": "^1.4.0",
+    "sinon": "^7.2.3"
+  }
+}
